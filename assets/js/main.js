@@ -99,6 +99,101 @@ console.log(besteFussballerAllerZeiten)
 
 // Lev 1_7
 let deutscheGerichte = ['Speckkuchen', 'Thüringer Rostbratwurst', 'Quarkkeulchen', 'Sauerbraten']
-deutscheGerichte.unshift()
+let germanFood = deutscheGerichte.unshift('Bratwurst', 'Sauerkraut', 'Brezel')
 
+deutscheGerichte.unshift('Bratwurst', 'Sauerkraut', 'Brezel')
+console.log(germanFood)//Why this turn into a number?
+
+//Lev1_8
+console.log(deutscheGerichte)
+
+deutscheGerichte.shift()
+console.log(deutscheGerichte)
+
+deutscheGerichte.shift()
+nichtGut = deutscheGerichte.shift()
+console.log(nichtGut)
+
+deutscheGerichte.shift()
+nichtGut = deutscheGerichte.shift()
+console.log(nichtGut)
+console.log(deutscheGerichte)
+
+//Lev1_9
+let num = [23, 54, 75]
+num.push(45, 56, 67, 78, 89)
+num.unshift(12, 23, 34, 45, 56)
+num.pop()
+num.pop()
+num.shift()
+num.shift()
+console.log(num)
+
+//Lev1_10
+let array = [
+    "imageTeilnehmer000supercode.jpg",
+    "imageTeilnehmer001supercode.jpg",
+    "imageTeilnehmer002supercode.jpg",
+    "imageTeilnehmer003supercode.jpg",
+    "imageTeilnehmer004supercode.jpg",
+    "imageTeilnehmer005supercode.jpg",
+    "imageTeilnehmer006supercode.jpg",
+    "imageTeilnehmer007supercode.jpg",
+    "imageTeilnehmer008supercode.jpg",
+    "imageTeilnehmer009supercode.jpg",
+    "imageTeilnehmer010supercode.jpg",
+    "imageTeilnehmer011supercode.jpg",
+    "imageTeilnehmer012supercode.jpg",
+    "imageTeilnehmer013supercode.jpg",
+    "imageTeilnehmer014supercode.jpg",
+    "imageTeilnehmer015supercode.jpg",
+    "imageTeilnehmer016supercode.jpg",
+    "imageTeilnehmer017supercode.jpg",
+    "imageTeilnehmer018supercode.jpg",
+    "imageTeilnehmer019supercode.jpg"
+];
+//Entferne die Fotos mit der Nummer 004-007.
+array.splice()
+let DelImg1 = array.splice(4, 4)
+console.log(array)
+console.log(DelImg1)
+
+//Entferne die Fotos mit der Nummer 010-014.
+let DelImg2 = array.splice(6, 5)
+console.log(DelImg2)
+console.log(array)
+
+let DelImg3 = array.splice(2)
+console.log(DelImg3)
+console.log(array)
+
+//Lev1_11
+var array2 = ["imageTeilnehmer000supercode.jpg", "imageTeilnehmer001supercode.jpg"];
+//Füge Fotos mit der Nummer 008-010 hinzu.
+// Gib array in der Konsole aus.
+array2.splice(2, 0, "imageTeilnehmer008supercode.jpg", "imageTeilnehmer009supercode.jpg",
+    "imageTeilnehmer010supercode.jpg")
+console.log(array2)
+
+//Füge Fotos mit der Nummer 014-019 hinzu.
+// Gib array in der Konsole aus.
+array2.splice(6, 0, "imageTeilnehmer014supercode.jpg", "imageTeilnehmer015supercode.jpg", "imageTeilnehmer016supercode.jpg", "imageTeilnehmer017supercode.jpg", "imageTeilnehmer018supercode.jpg", "imageTeilnehmer019supercode.jpg")
+console.log(array2)
+//Füge Fotos mit der Nummer 000-019 hinzu.
+// Gib array in der Konsole aus.
+array2.splice(2, 0, "imageTeilnehmer002supercode.jpg", "imageTeilnehmer003supercode.jpg", "imageTeilnehmer004supercode.jpg", "imageTeilnehmer005supercode.jpg", "imageTeilnehmer006supercode.jpg", "imageTeilnehmer007supercode.jpg")
+array2.splice(11, 0, "imageTeilnehmer011supercode.jpg", "imageTeilnehmer012supercode.jpg", "imageTeilnehmer013supercode.jpg")
+console.log(array2)
+
+//Lev1_12
+console.log(array2.slice(0, 4))
+
+console.log(array2.slice(4))
+
+//Kopiere die Bilder 007-014 und deklariere sie als Variable copyImg1.
+let copyImg1 = array2.slice(7, 15)
+console.log(copyImg1)
+//Kopiere die Bilder 006-011 und deklariere sie als Variable copyImg2.
+let copyImg2 = array2.slice(6, 12)
+console.log(copyImg2)
 
